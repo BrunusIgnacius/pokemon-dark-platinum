@@ -1,12 +1,12 @@
 # Pokemon Dark Platinum
 
-Um mini-universo Pokemon feito em **HTML, CSS e JavaScript puro** (sem frameworks). Inclui registro de treinador, montagem de equipe via PokeAPI, jogo da memória, batalhas por turnos e um modo extra com a turma **StartCodingBatch**.
+A mini Pokémon universe built with pure **HTML, CSS, and JavaScript (no frameworks)**. It includes trainer registration, team building via the PokeAPI, a memory game, turn-based battles, and an extra mode featuring the **StartCodingBatch** group.
 
 ---
 
 ## Screenshots
 
-> _Espaço reservado para capturas de tela do projeto._
+> _Reserved space for project screenshots._
 
 ### Tela de Registro
 ![Registro Light](screenshots/light/registro.png)
@@ -72,102 +72,104 @@ Um mini-universo Pokemon feito em **HTML, CSS e JavaScript puro** (sem framework
 
 ---
 
-## Como rodar
+## How to Run
 
-Abra `register/registrar.html` (ou qualquer arquivo html que achar, temos camada de segurança).
+The application should be started from `register/registrar.html`.  
+Direct access to other files will trigger an automatic redirect to the correct entry point.
 
-Fluxo recomendado: `register/` → `index/` → `pokeTeam/` → `chooseGame/` → modo escolhido.
+Recommended flow: `register/` → `index/` → `pokeTeam/` → `chooseGame/` → selected mode.
+
 
 ---
 
-## Estrutura do projeto
+## Project Structure
 
 ```
 PokemonDarkPlatinum/
-├── register/        Cadastro do treinador
-├── index/           Pokedex e seleção de equipe (até 6 Pokemons)
-├── pokeTeam/        Visualização da equipe montada
-├── chooseGame/      Hub de escolha do modo de jogo
-├── memoryGame/      Jogo da memória (3 dificuldades)
-├── battleGame/      Batalha por turnos contra a CPU (3 dificuldades)
-├── extraGame/       Modo extra com colegas da turma (3 dificuldades)
-├── theme/           Tema claro/escuro, música, overlays e proteção de navegação
-├── photos/          Sprites e imagens (treinador, fundo, colegas)
-└── font/            Fontes pixeladas e estilo Pokemon
+├── register/        Trainer registration
+├── index/           Pokédex and team selection (up to 6 Pokémon)
+├── pokeTeam/        Built team overview
+├── chooseGame/      Game mode selection hub
+├── memoryGame/      Memory game (3 difficulty levels)
+├── battleGame/      Turn-based battle against CPU (3 difficulty levels)
+├── extraGame/       Extra mode with classmates (3 difficulty levels)
+├── theme/           Light/dark theme, music, overlays, and navigation control
+├── photos/          Sprites and images (trainer, backgrounds, classmates)
+
 ```
 
 ---
 
-## Pastas e arquivos
+## Folders and Files
 
-### `register/` — Cadastro do treinador
-- **`registrar.html`** — Formulário: nome, idade e seletor de avatar (menino / menina / Valdo / Valda).
-- **`registrar.js`** — Valida o formulário, salva o treinador em `localStorage` e habilita o botão "Começar Jornada".
-- **`registrar.css`** — Estilos do formulário e dos cards de avatar.
+### `register/` — Trainer Registration
+- **`registrar.html`** — Form: name, age, and avatar selector (boy / girl / Valdo / Valda).
+- **`registrar.js`** — Validates the form, saves the trainer to `localStorage`, and enables the "Start Journey" button.
+- **`registrar.css`** — Styles for the form and avatar cards.
 
-### `index/` — Pokedex e seleção de equipe
-- **`index.html`** — Tela principal: cabeçalho com nome do treinador, contador `Equipe: X / 6`, busca por nome, filtro por tipo e overlay "Equipe Completa".
-- **`index.js`** — Lógica da Pokedex: consome a [PokeAPI](https://pokeapi.co/), renderiza cards, controla seleção (máx. 6), busca, filtro e persiste a equipe em `localStorage`.
-- **`index.css`** — Estilos da grade de cards e da barra de filtros.
+### `index/` — Pokédex and Team Selection
+- **`index.html`** — Main screen: header with trainer name, counter `Team: X / 6`, name search, type filter, and "Team Complete" overlay.
+- **`index.js`** — Pokédex logic: consumes the [PokeAPI](https://pokeapi.co/), renders cards, manages selection (max. 6), search, filtering, and persists the team in `localStorage`.
+- **`index.css`** — Styling for the card grid and filter bar.
 
-### `pokeTeam/` — Equipe montada
-- **`equipe.html`** — Tela que mostra os 6 (ou menos) Pokemons selecionados.
-- **`equipe.js`** — Lê a equipe do `localStorage` e renderiza os cards detalhados.
-- **`equipe.css`** — Layout em grid da equipe.
+### `pokeTeam/` — Built Team
+- **`equipe.html`** — Screen displaying the selected Pokémon (up to 6).
+- **`equipe.js`** — Reads the team from `localStorage` and renders detailed cards.
+- **`equipe.css`** — Team grid layout.
 
-### `chooseGame/` — Hub de modos
-- **`aventura.html`** — Cards "Jogo da Memória", "Batalha" e "Modo Extra" + overlays internos para escolha de dificuldade (Iniciante, Difícil, Maluco).
-- **`aventura.js`** — Roteamento entre os modos e abertura/fechamento dos overlays.
-- **`aventura.css`** — Estilos dos cards de modo.
+### `chooseGame/` — Mode Hub
+- **`aventura.html`** — Cards for "Memory Game", "Battle", and "Extra Mode" + internal overlays for difficulty selection (Beginner, Hard, Crazy).
+- **`aventura.js`** — Handles navigation between modes and opening/closing overlays.
+- **`aventura.css`** — Styling for mode cards.
 
-### `memoryGame/` — Jogo da memória
-Três dificuldades, cada uma em sua pasta com HTML+JS próprios e CSS compartilhado:
-- **`begginer/memoriaIniciante.{html,js}`** — Pares (sprite + nome) com a equipe do jogador.
-- **`pro/memoriaDificil.{html,js}`** — Trincas em vez de pares.
-- **`crazy/memoriaMaluco.{html,js}`** — Encontre o intruso entre os Pokemons.
-- **`memoria.css`** — Estilos do tabuleiro, cartas e animação de virar.
+### `memoryGame/` — Memory Game
+Three difficulty levels, each in its own folder with its own HTML+JS and shared CSS:
+- **`begginer/memoriaIniciante.{html,js}`** — Matching pairs (sprite + name) using the player's team.
+- **`pro/memoriaDificil.{html,js}`** — Matching triples instead of pairs.
+- **`crazy/memoriaMaluco.{html,js}`** — Find the intruder among the Pokémon.
+- **`memoria.css`** — Board, card, and flip animation styles.
 
-### `battleGame/` — Batalha por turnos
-- **`battleEngine.js`** — Funções puras de cálculo: dano com base em `Att/Def`, multiplicador de tipo, buffs/debuffs e IA da CPU em 3 prioridades (finalizar → buff → ataque mais forte).
-- **`tabelaTipos.js`** — Tabela de efetividade entre tipos (Fogo > Grama, etc.).
-- **`selecao/selecao.{html,js}`** — Tela onde o jogador escolhe um Pokemon ativo da equipe.
-- **`arena/arena.{html,js}`** — Arena de batalha: HP bars, animações, log de turno e fim de jogo.
-- **`battle.css`** — Estilos da arena, barras e botões de movimento.
+### `battleGame/` — Turn-based Battle
+- **`battleEngine.js`** — Pure calculation functions: damage based on `Atk/Def`, type multipliers, buffs/debuffs, and CPU AI with 3 priorities (finish → buff → strongest attack).
+- **`tabelaTipos.js`** — Type effectiveness table (Fire > Grass, etc.).
+- **`selecao/selecao.{html,js}`** — Screen where the player selects an active Pokémon.
+- **`arena/arena.{html,js}`** — Battle arena: HP bars, animations, turn log, and game end.
+- **`battle.css`** — Arena, bar, and move button styles.
 
-### `extraGame/` — Modo extra (turma StartCodingBatch)
-Mesma mecânica do jogo da memória, mas com **fotos dos colegas** no lugar de Pokemons:
-- **`colegas.js`** — Lista dos colegas e a "intrusa" Jucieli (coordenadora) — só aparece no modo Maluco.
-- **`begginer/extraIniciante.{html,js}`** — Pares de colegas.
-- **`pro/extraDificil.{html,js}`** — Trincas de colegas.
-- **`crazy/extraMaluco.{html,js}`** — Quem é a intrusa?
-- **`extra.css`** — Estilo específico do modo extra.
+### `extraGame/` — Extra Mode (StartCodingBatch group)
+Same mechanics as the memory game, but with **classmates' photos** instead of Pokémon:
+- **`colegas.js`** — List of classmates and the "intruder" Jucieli (coordinator) — appears only in Crazy mode.
+- **`begginer/extraIniciante.{html,js}`** — Matching pairs of classmates.
+- **`pro/extraDificil.{html,js}`** — Matching triples of classmates.
+- **`crazy/extraMaluco.{html,js}`** — Who is the intruder?
+- **`extra.css`** — Styles specific to the extra mode.
 
-### `theme/` — Camada compartilhada
-- **`tema.{js,css}`** — Toggle de modo escuro/claro (persiste em `localStorage`).
-- **`musica.{js,css}`** — Player de música de fundo com botão flutuante.
-- **`overlays.{js,css}`** — Sistema de overlays/modais reutilizáveis.
-- **`guard.js`** — Guarda de navegação: se faltar treinador ou equipe, redireciona para `register/` ou `index/` automaticamente, calculando o caminho relativo conforme a profundidade da página.
+### `theme/` — Shared Layer
+- **`tema.{js,css}`** — Light/dark mode toggle (persisted in `localStorage`).
+- **`musica.{js,css}`** — Background music player with floating button.
+- **`overlays.{js,css}`** — Reusable overlay/modal system.
+- **`guard.js`** — Navigation guard: if trainer or team is missing, redirects to `register/` or `index/` automatically, calculating the relative path based on page depth.
 
 ### `photos/`
-- **`boy.png`, `girl.png`** — Sprites dos avatares de treinador.
-- **`bg.jpg`** — Imagem de fundo.
-- **`StartCodingBatch/`** — Fotos dos colegas da turma usadas no Modo Extra.
+- **`boy.png`, `girl.png`** — Trainer avatar sprites.
+- **`bg.jpg`** — Background image.
+- **`StartCodingBatch/`** — Classmate photos used in Extra Mode.
 
 ### `font/`
-Fontes utilizadas no projeto:
-- **`PokemonSolid.ttf`**, **`PokemonHollow.ttf`** — Estilo logo Pokemon.
-- **`PixelGameFont.ttf`** — Fonte pixelada para textos.
+Fonts used in the project:
+- **`PokemonSolid.ttf`**, **`PokemonHollow.ttf`** — Pokémon logo-style fonts.
+- **`PixelGameFont.ttf`** — Pixel-style font for text.
 
 ---
 
-## Tecnologias
+## Technologies
 
-- HTML5, CSS3, JavaScript (ES6+) — sem frameworks
-- [PokeAPI](https://pokeapi.co/) para dados e sprites dos Pokemons
-- `localStorage` para persistir treinador e equipe entre páginas
+- HTML5, CSS3, JavaScript (ES6+) — no frameworks
+- [PokeAPI](https://pokeapi.co/) for Pokémon data and sprites
+- `localStorage` to persist trainer and team across pages
 
 ---
 
-## Créditos
+## Credits
 
-Projeto desenvolvido durante a turma **StartCodingBatch2026**. Sprites e dados de Pokemons fornecidos pela PokeAPI; fotos da turma usadas com permissão dos colegas.
+Project developed during the **StartCodingBatch2026** course. Pokémon sprites and data provided by the PokeAPI; class photos used with permission from classmates.
