@@ -8,67 +8,67 @@ A mini Pokémon universe built with pure **HTML, CSS, and JavaScript (no framewo
 
 > _Reserved space for project screenshots._
 
-### Tela de Registro
-![Registro Light](screenshots/light/registro.png)
-![Registrado Light](screenshots/light/registrado.png)
-![Registro Dark](screenshots/dark/registro.png)
-![Registrado Dark](screenshots/dark/registrado.png)
+### Registration Screen
+![Registration Light](screenshots/light/registro.png)
+![Registered Light](screenshots/light/registrado.png)
+![Registration Dark](screenshots/dark/registro.png)
+![Registered Dark](screenshots/dark/registrado.png)
 
-### Tela de Equipe Vazia
-![Equipe Vazia Light](screenshots/light/equipeVazia.png)
-![Equipe Vazia Dark](screenshots/dark/equipeVazia.png)
+### Empty Team Screen
+![Empty Team Light](screenshots/light/equipeVazia.png)
+![Empty Team Dark](screenshots/dark/equipeVazia.png)
 
-### Pokedex / Seleção de Equipe
+### Pokédex / Team Selection
 ![Pokedex Light](screenshots/light/selecao.png)
 ![Pokedex Dark](screenshots/dark/selecao.png)
-![Pokedex Confirmar Light](screenshots/light/equipeEscolhida.png)
-![Pokedex Confirmar Dark](screenshots/dark/equipeEscolhida.png)
+![Pokedex Confirm Light](screenshots/light/equipeEscolhida.png)
+![Pokedex Confirm Dark](screenshots/dark/equipeEscolhida.png)
 
-### Tela de Equipe Cheia ou Quase
-![Equipe Cheia Light](screenshots/light/equipeCheia.png)
-![Equipe Cheia Dark](screenshots/dark/equipeCheia.png)
-![Equipe Cheia Light](screenshots/light/menosUmEquipe.png)
-![Equipe Cheia Dark](screenshots/dark/menosUmEquipe.png)
+### Full or Nearly Full Team Screen
+![Full Team Light](screenshots/light/equipeCheia.png)
+![Full Team Dark](screenshots/dark/equipeCheia.png)
+![Almost Full Team Light](screenshots/light/menosUmEquipe.png)
+![Almost Full Team Dark](screenshots/dark/menosUmEquipe.png)
 
-### Escolha de Aventura
-![Modos Aventura Light](screenshots/light/escolherGame.png)
-![Modos Aventura Light](screenshots/dark/escolherGame.png)
+### Adventure Mode Selection
+![Adventure Modes Light](screenshots/light/escolherGame.png)
+![Adventure Modes Dark](screenshots/dark/escolherGame.png)
 
-### Jogo da Memória
-![Modos Memória Light](screenshots/light/escolherModo.png)
-![Modos Memória Dark](screenshots/dark/modosMemoria.png)
-![Memória Maluco Light](screenshots/light/memoriaAcertosIntruso.png)
-![Memória Maluco Dark](screenshots/dark/memoriaAcertosIntruso.png)
-![Memória Maluco Intruso Light](screenshots/light/memoriaMalucoIntruso.png)
-![Memória Maluco Intruso Dark](screenshots/dark/memoriaIntruso.png)
-![Memória Maluco Vitória Light](screenshots/light/memoriaVitoria.png)
-![Memória Maluco Vitória Dark](screenshots/dark/vitoriaMemoria.png)
+### Memory Game
+![Memory Modes Light](screenshots/light/escolherModo.png)
+![Memory Modes Dark](screenshots/dark/modosMemoria.png)
+![Crazy Memory Hits Light](screenshots/light/memoriaAcertosIntruso.png)
+![Crazy Memory Hits Dark](screenshots/dark/memoriaAcertosIntruso.png)
+![Crazy Memory Intruder Light](screenshots/light/memoriaMalucoIntruso.png)
+![Crazy Memory Intruder Dark](screenshots/dark/memoriaIntruso.png)
+![Crazy Memory Victory Light](screenshots/light/memoriaVitoria.png)
+![Crazy Memory Victory Dark](screenshots/dark/vitoriaMemoria.png)
 
-### Batalha
-![Modos Batalha Light](screenshots/light/batalhaModos.png)
-![Modos Batalha Dark](screenshots/dark/modosBatalha.png)
-![Batalha Seleção Light](screenshots/light/escolhendoPokeBatalha.png)
-![Batalha Seleção Dark](screenshots/dark/escolherPokeBatalha.png)
-![Batalha Light](screenshots/light/telaBatalha.png)
-![Batalha Dark](screenshots/dark/batalha.png)
-![Batalha Troca Light](screenshots/light/mudarPokeBatalha.png)
-![Batalha Troca Dark](screenshots/dark/trocarPokeBatalha.png)
-![Batalha Fuga Light](screenshots/light/fugaBatalha.png)
-![Batalha Fuga Dark](screenshots/dark/fugirBatalha.png)
+### Battle
+![Battle Modes Light](screenshots/light/batalhaModos.png)
+![Battle Modes Dark](screenshots/dark/modosBatalha.png)
+![Battle Selection Light](screenshots/light/escolhendoPokeBatalha.png)
+![Battle Selection Dark](screenshots/dark/escolherPokeBatalha.png)
+![Battle Screen Light](screenshots/light/telaBatalha.png)
+![Battle Screen Dark](screenshots/dark/batalha.png)
+![Battle Switch Light](screenshots/light/mudarPokeBatalha.png)
+![Battle Switch Dark](screenshots/dark/trocarPokeBatalha.png)
+![Battle Escape Light](screenshots/light/fugaBatalha.png)
+![Battle Escape Dark](screenshots/dark/fugirBatalha.png)
 
-### Modo Extra
-![Modos Extra Light](screenshots/light/extraModos.png)
-![Modos Extra Dark](screenshots/dark/modosExtra.png)
-![Extra Maluco Light](screenshots/light/extraAcertosIntrusa.png)
-![Extra Maluco Dark](screenshots/dark/extraAcertosIntrusa.png)
-![Extra Maluco Intrusa Light](screenshots/light/extraMalucoIntrusa.png)
-![Extra Maluco Intrusa Dark](screenshots/dark/extraIntrusa.png)
-![Extra Maluco Vitória Light](screenshots/light/vitoriaExtra.png)
-![Extra Maluco Vitória Dark](screenshots/dark/extraVitoria.png)
+### Extra Mode
+![Extra Modes Light](screenshots/light/extraModos.png)
+![Extra Modes Dark](screenshots/dark/modosExtra.png)
+![Crazy Extra Hits Light](screenshots/light/extraAcertosIntrusa.png)
+![Crazy Extra Hits Dark](screenshots/dark/extraAcertosIntrusa.png)
+![Crazy Extra Intruder Light](screenshots/light/extraMalucoIntrusa.png)
+![Crazy Extra Intruder Dark](screenshots/dark/extraIntrusa.png)
+![Crazy Extra Victory Light](screenshots/light/vitoriaExtra.png)
+![Crazy Extra Victory Dark](screenshots/dark/extraVitoria.png)
 
-### Trilha Sonora
-![Trilha Sonora](screenshots/light/trilhaSonora.png)
-![Trilha Sonora](screenshots/dark/trilhaSonora.png)
+### Soundtrack
+![Soundtrack Light](screenshots/light/trilhaSonora.png)
+![Soundtrack Dark](screenshots/dark/trilhaSonora.png)
 
 ---
 
